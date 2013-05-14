@@ -43,11 +43,15 @@ int atoi(const char* lhs)
 	    result += ((strInt[j] - '0') * pow(10,strIntLength - 1 - j));
 	}
 	
-	if(result < 0 && hasSigned != 1)
+	if(result < 0 )
 	{
-	    result = pow(2,31) - 1;
+	    if(!hasSigned)
+		return result = pow(2,31) - 1;
+	    else
+		return pow(2,31) * (-1);
 	}
-	return result * (hasSigned ? -1 : 1);
+
+	return (result * (hasSigned ? -1 : 1));
     }
     else
     {
