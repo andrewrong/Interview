@@ -57,7 +57,7 @@ int main()
 
     string roman;
     int num;
-
+    
     while(inf >> roman >> num)
     {
 	if(RomanToInt(roman) == num)
@@ -70,5 +70,4 @@ int main()
 	    cout << roman << " " << RomanToInt(roman) << " " << num << endl;
 	}
     }
-	
 }

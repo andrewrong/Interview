@@ -106,7 +106,7 @@ int main()
 {
     ListNode* lhs = new ListNode(0);
     ListNode* rhs = new ListNode(2);
-
+    
     cout << AddTwoNumbers(lhs,rhs)->val << endl;
 
     return 0;
